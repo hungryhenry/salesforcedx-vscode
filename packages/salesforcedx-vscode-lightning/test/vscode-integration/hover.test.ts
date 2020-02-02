@@ -21,6 +21,8 @@ describe('Aura Hovers', function() {
   let auraDir: string;
 
   before(async function() {
+    this.timeout(5000);
+
     auraDir = path.join(
       workspace.workspaceFolders![0].uri.fsPath,
       'force-app',
@@ -29,7 +31,7 @@ describe('Aura Hovers', function() {
       'aura'
     );
 
-    await new Promise(r => setTimeout(r, 1500));
+    await new Promise(r => setTimeout(r, 2500));
   });
 
   afterEach(async function() {

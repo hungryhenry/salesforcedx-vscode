@@ -101,7 +101,7 @@ describe('LWC Test Indexer', () => {
       createFileSystemWatcherStub.restore();
       parseStub.restore();
     });
-    const EXISTING_TEST_FILE_NUM = 1;
+    const EXISTING_TEST_FILE_NUM = 3;
     function assertTestCasesMatch(
       actualTestFileInfo: TestFileInfo | undefined,
       expectedFilePath: string

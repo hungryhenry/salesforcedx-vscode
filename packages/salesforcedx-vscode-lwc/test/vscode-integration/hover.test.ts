@@ -20,6 +20,8 @@ describe('LWC Hovers', function() {
   let lwcDir: string;
 
   before(async function() {
+    this.timeout(5000);
+
     lwcDir = path.join(
       workspace.workspaceFolders![0].uri.fsPath,
       'force-app',
@@ -28,7 +30,7 @@ describe('LWC Hovers', function() {
       'lwc'
     );
 
-    await new Promise(r => setTimeout(r, 1500));
+    await new Promise(r => setTimeout(r, 2500));
   });
 
   afterEach(async function() {
